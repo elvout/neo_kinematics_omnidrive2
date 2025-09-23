@@ -209,7 +209,7 @@ public:
         RCLCPP_WARN(this->get_logger(), "cmd_vel input timeout! Stopping now.");
       }
       // reset values to zero
-      // m_last_cmd_vel = geometry_msgs::msg::Twist();
+      m_last_cmd_vel = geometry_msgs::msg::Twist();
       is_cmd_timeout = true;
     } else {
       is_cmd_timeout = false;
